@@ -7,4 +7,5 @@
   "ruff.path": ["${workspaceFolder}/venv/Scripts/ruff.exe"],
   "mypy-type-checker.preferDaemon": false,
   "mypy-type-checker.reportingScope": "workspace",
+  "python.analysis.inlayHints.pytestParameters": true
 }
