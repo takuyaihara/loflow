@@ -1,0 +1,18 @@
+line-length = 88
+target-version = "py313"
+
+exclude = [
+  "venv",
+  "_cache_bgm",
+  "__pycache__",
+]
+
+[lint]
+select = ["E", "F", "W", "I"]
+
+unsafe-fixes = false
+
+[format]
+docstring-code-format = true
+quote-style = "double"
+skip-magic-trailing-comma = false
