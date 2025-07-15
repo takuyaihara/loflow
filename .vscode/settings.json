@@ -7,5 +7,4 @@
   "ruff.path": ["${workspaceFolder}/venv/Scripts/ruff.exe"],
   "mypy-type-checker.preferDaemon": false,
   "mypy-type-checker.reportingScope": "workspace",
-  "mypy-type-checker.severity": { "error": "Warning", "note": "Information" }
 }
