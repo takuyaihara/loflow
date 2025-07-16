@@ -116,3 +116,29 @@ MusicGen はリズム構造をある程度指示できるが、**常に1拍目�
 
 * 現在は MP3 長さを 60 秒に固定（15秒×4）
 * 将来的にテンポに応じて可変長にするか検討中
+
+---
+
+## 🧹 開発支援ツール設定（フォーマッター / リント / 型チェック / Copilot）
+
+* **フォーマッター**：`black`
+
+  * VSCode 設定で `editor.defaultFormatter` に `ms-python.black-formatter` を指定
+  * `editor.formatOnSave = true` により保存時自動整形
+
+* **リント**：`Ruff`
+
+  * `ruff.enable = true`
+  * Windows 専用設定：`ruff.path = ["${workspaceFolder}/venv/Scripts/ruff.exe"]`
+
+* **型チェック**：`mypy-type-checker` 拡張（[matangover.mypy-type-checker](https://marketplace.visualstudio.com/items?itemName=matangover.mypy-type-checker)）
+
+  * `mypy-type-checker.preferDaemon = false`
+  * `mypy-type-checker.reportingScope = "workspace"`
+
+* **GitHub Copilot Pro**：導入済み
+
+  * 拡張機能：`GitHub Copilot` + `GitHub Copilot Chat`
+  * チャットモードは通常チャット（Edit）を常用
+  * 左メニューにはアイコン非表示。`Ctrl+Alt+I` で起動
+  * Copilot の出力は ChatGPT でレビューして補完
