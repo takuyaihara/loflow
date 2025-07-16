@@ -10,8 +10,7 @@ exclude = [
 [lint]
 select = ["E", "F", "W", "I"]
 
-unsafe-fixes = false
-
+extend-unsafe-fixes = []
 [format]
 docstring-code-format = true
 quote-style = "double"
